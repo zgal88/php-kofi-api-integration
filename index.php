@@ -42,7 +42,7 @@ if(isset($_POST['data'])){
 		if(json_last_error()){ $message .= "\r\nJSON Decode Error Message: " . json_last_error_msg();
 		// Open logs fille, append, and close.
 		$errorLog = fopen('error_log.txt', 'a');
-		fwrite($errorLog, $messagge);
+		fwrite($errorLog, $message);
 		fclose($errorLog);
 		// Now let's dump what was collected from the data object, for troubleshooting, just in case.
 		$objectDumpFile = fopen(time() . '-data_dump.txt', 'a');
