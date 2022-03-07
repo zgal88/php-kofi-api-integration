@@ -1,14 +1,13 @@
 <?php
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//  The following "function" was created using publically available information about the Ko-Fi API endpoint, which can be viewed  //
-//  here: https://help.ko-fi.com/hc/en-us/articles/360004162298-Does-Ko-fi-Have-an-API-or-Webhook-                                 //
-//                                                                                                                                 //
-//  Created By: ZGal88                                                                                                             //
-//  September 12th, 2021                                                                                                           //
-//  Listed under the MIT License                                                                                                   //
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  The following "function" was created using publically available                                    //
+//  information about the Ko-Fi API endpoint, which can be viewed                                      //
+//  here: https://help.ko-fi.com/hc/en-us/articles/360004162298-Does-Ko-fi-Have-an-API-or-Webhook-     //
+//                                                                                                     //
+//  Created By: ZGal88                                                                                 //
+//  September 12th, 2021                                                                               //
+//  Listed under the MIT License                                                                       //
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 // First check if a 'data' object was even sent
 if(isset($_POST['data'])){
 	try{
@@ -31,7 +30,6 @@ if(isset($_POST['data'])){
 		////////////////////////////////////////////////////////////////////////////
 		//                             Do Stuff Here                              //
 		////////////////////////////////////////////////////////////////////////////
-		
 		// Send the 200 Ok Header and end function
 		header($_SERVER["SERVER_PROTOCOL"]." 200 Ok");
 		die;
