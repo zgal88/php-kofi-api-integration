@@ -15,7 +15,7 @@ if(!isset($donationMessage)){
 try{
 	$data = [
         'embeds' => [[
-            'title' => $donationType . "Received!",
+            'title' => $donationType . " Received!",
             'description' => "Message from Sender: " . $donationMessage,
             'timestamp' => $donationTimeStamp,
             'color' => hexdec("13C3FF"),
