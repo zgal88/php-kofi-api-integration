@@ -3,8 +3,8 @@ This is a simple PHP "plugin" system, composed of two parts:
 - The main index.php file
 - The send-discord.php file
 
-The main file includes the logic for verifying an API POST came from Ko-Fi's API itself, as well as 'decodind' the JSON payload, and assigning the various values to individual variables, that you can then use for whatever further processing you would like to do.
-- You need to put your own verification token value at the top of the file, where indictaed, otherwisse this plugin will NOT work for you properly.
+The main file includes the logic for verifying an API POST came from Ko-Fi's API itself, as well as 'decoding' the JSON payload, and assigning the various values to individual variables, that you can then use for whatever further processing you would like to do.
+- You need to put your own verification token value at the top of the file, where indicated, otherwise this plugin will NOT work for you properly.
 - You will need to ensure that your API setting on your Ko-Fi dashboard, is set to the location that the main file from this plugin, is located at.
 
 The discord file is optional, and only needed if you plan to activate the option to send notifications to a webhook endpoint in your Discord server.
