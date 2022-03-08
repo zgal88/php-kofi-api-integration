@@ -31,6 +31,8 @@ try{
 			$donationType = (($array['type'] != "") ? $array['type'] : "None");
 			// Display name for who ssent the donation; not necessarily their Ko-Fi username.
 			$donationFrom = (($array['from_name'] != "") ? $array['from_name'] : "None");
+			// The email address of the sender
+			$donationEmail = (($array['email'] != "") ? $array['email'] : "None");
 			// If they left a message, it's here.
 			$donationMessage = (($array['message'] != "") ? $array['message'] : "None");
 			// The numerical value of the donation amount
