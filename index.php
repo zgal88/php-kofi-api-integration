@@ -8,6 +8,11 @@
 //  September 12th, 2021                                                                               //
 //  Listed under the MIT License                                                                       //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Set to 'true' if you want to enable the Discord webhook sender.
+$send_discord_webhook = false;
+// Discord Webhook URL - Required if sending
+// Change this to your own webhook address
+$hook_url = "https://discord.com/api/webhooks/123456789123456789/aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567812345678";
 // First check if a 'data' object was even sent
 if(isset($_POST['data'])){
 	try{
@@ -51,4 +56,5 @@ if(isset($_POST['data'])){
 		die;
 	}
 }
+if($send_discord_webhook) require('send-discord-webhook-notification.php');
 ?>

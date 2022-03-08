@@ -4,9 +4,7 @@
 //  you have first gathered the data using   //
 //  the main index.php file in this project  //
 ///////////////////////////////////////////////
-// Discord Webhook  URL - Example Below
-$hook_url = "https://discord.com/api/webhooks/123456789123456789/aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567812345678";
-$donation_types['Donation', 'Subscription', 'Commision', 'Shop Order'];
+$donation_types['Donation', 'Subscription', 'Commission', 'Shop Order'];
 // Make Sure We Have A Valid Message
 $donation_message = "";
 if(isset($donationmessage)) $donation_message = (($donationMessage != "" && $donationMessage != null) ? $donationMessage : "No Donation Message Provided"
