@@ -12,7 +12,7 @@ The discord file is optional, and only needed if you plan to activate the option
 - Change the 'false' to 'true' under the setting at the top of the main file (enable discord sending)
 - Replace the default example webhook address with your own.
 
-If you need help, you can get in touch with me on Discord, under the account ModVault#0001
+If you need help, you can get in touch with me on Discord, under the account isobellavt
 
 ---
 Do you like the plugin, and wish to donate?
